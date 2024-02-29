@@ -62,7 +62,7 @@ function ContactForm() {
         </div>
 
         <div className="hidden lg:block col-span-4">
-          <img src="public/contact-page-image.svg" />
+          <img src="/contact-page-image.svg" />
         </div>
       </div>
     </div>
