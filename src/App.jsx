@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import '@/App.css'
-import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
+import { useState } from "react";
+import "@/App.css";
+import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
+import ContactForm from "@/components/ContactForm";
 
 const menuItems = [
   {
@@ -18,8 +19,8 @@ const menuItems = [
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  function toggleSidebar () {
-    setIsSidebarOpen(!isSidebarOpen)
+  function toggleSidebar() {
+    setIsSidebarOpen(!isSidebarOpen);
   }
 
   return (
@@ -28,11 +29,13 @@ function App() {
 
       <Sidebar isOpen={isSidebarOpen} menuItems={menuItems} />
 
-      <p>
-        Hello world
-      </p>
+      <div className="flex bg-secondary justify-center">
+        <div className="container py-10 lg:py-20 px-5 lg:px-40">
+          <ContactForm />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
