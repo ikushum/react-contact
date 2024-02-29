@@ -1,14 +1,32 @@
-// import { useState } from 'react'
-import './App.css'
+import { useState } from 'react'
+import '@/App.css'
 import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 
+const menuItems = [
+  {
+    name: "SERVICES",
+  },
+  {
+    name: "PORTFOLIO",
+  },
+  {
+    name: "ABOUT US",
+  },
+];
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  function toggleSidebar () {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
 
   return (
     <div>
-      <Navbar />
+      <Navbar toggleSidebar={toggleSidebar} menuItems={menuItems} />
+
+      <Sidebar isOpen={isSidebarOpen} menuItems={menuItems} />
 
       <p>
         Hello world

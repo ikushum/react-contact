@@ -1,16 +1,4 @@
-const menuItems = [
-  {
-    name: "SERVICES",
-  },
-  {
-    name: "PORTFOLIO",
-  },
-  {
-    name: "ABOUT US",
-  },
-];
-
-function Navbar() {
+function Navbar({ toggleSidebar, menuItems = [] }) {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-secondary py-6 px-12">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -36,8 +24,11 @@ function Navbar() {
         </button>
       </div>
 
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-primary hover:border-primary">
+      <div className="block lg:hidden" >
+        <button
+          className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-primary hover:border-primary"
+          onClick={toggleSidebar}
+        >
           <svg
             className="fill-current h-3 w-3"
             viewBox="0 0 20 20"
