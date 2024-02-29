@@ -3,6 +3,7 @@ import "@/App.css";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 
 const menuItems = [
   {
@@ -34,6 +35,8 @@ function App() {
           <ContactForm />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

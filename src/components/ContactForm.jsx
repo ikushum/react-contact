@@ -3,7 +3,7 @@ function ContactForm() {
     <div className="flex w-full justify-items-center mx-auto">
       <div className="grid grid-cols-12 lg:gap-10 text-white">
         <div className="col-span-12 md:col-span-8">
-          <h2 className="font-fancy-title text-5xl mb-5">Contact Form</h2>
+          <h2 className="font-fancy-title text-6xl mb-5">Contact Form</h2>
 
           <p className="text-gray-400">
             Book a call or write us to discover our different options. Whether

@@ -7,5 +7,12 @@ body {
 }
 
 .font-fancy-title {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Dancing Script", cursive;
+}
+
+footer {
+  color: #fdcc88;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url('/footer-image.svg')
 }
